@@ -17,9 +17,9 @@ public class EmployeeDetails {
         Employee employee[] = new Employee[empLength];
         for(int i=0; i<employee.length; i++){
             employee[i] = new Employee();
-        }
+        // }
 
-        for(int i=0; i<employee.length; i++){
+        // for(int i=0; i<employee.length; i++){
             System.out.println("\nAdding Employee "+ (i+1) +" Detail");
 
             employee[i].setId(id);
