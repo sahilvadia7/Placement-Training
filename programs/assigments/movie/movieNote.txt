@@ -1,0 +1,37 @@
+ 
+# Customers pay
+    cash, 
+    online wallets, 
+    and credit card
+
+# Customer Details
+     name,
+     Payment Details,
+
+# TicketBooking Class
+    1. stageEvent ~ String
+    2. Customer ~ String
+    3. noOfSeats ~ int
+    4. Screen ~ String
+
+# Payment Details {MakePayment()}
+    case: amount
+    online wallets : wallet number , amount
+    credit card : card No , CVV , amount
+
+# BillGeneration
+    Customer Details
+    Payment Details
+    noOfSeats
+
+# Moive
+    Name ~ String
+    description ~ String
+    price ~ int
+    Screen ~ String
+
+
+@Upcoming update
+# SeatsShow
+    Using 2D Array
+    if seats selected make it "O" ~ occupied
