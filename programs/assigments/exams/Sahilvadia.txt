@@ -1,0 +1,114 @@
+1. a) Why java is important on internet? Explain. 
+->
+
+> java follow the oops concept (object oriented programming language) in java evet thing is object and class. it allow us to develop programs or software structre way.
+  java is not plateform dependent java use javac compiler it convert java file into classfile that class file execute by jvm so in java every data type use a same byte on various 
+  machine thats why java support wora it means wirte ones run anywhere
+
+ > java also support oops concept it allow us to resuce code and reuse the code.
+ > java also have grabage collection it automatically collect garbage value and free the memory for other use so you don't need to handle garbage valuse like in c.
+ > Also java don't support pointers, pointer diract work with memory location so might be it make mess in software.
+ > Java support multi-threading so you can use multiple threads at a same time.
+ > java8 include so many feature like generice, lamda functions and many more 
+ > java update thier verion in every year also introduce LTS version it stand for long time support
+ > java has larg community so it have large support with that so if you have any issue or querys it might high chance to get your solution very quick. 
+
+b) Write a java program using command line arguments, and explain. 
+-> 
+
+    //simple example of java hello world
+    public class HelloDemo{
+        public static void main(String[] args){
+            System.out.println("Hello wrold");
+        }
+    }
+
+    1. Make folder with Name of JAVA
+    2. Save this file into JAVA folder give name HelloDemo.java
+    3. Open cmd goto that folder using folder structre cd/.././ 
+    4. Wirte javac HelloDemo.java ~ it compile the code and create the .class file
+    5. Now java HelloDemo it will execute the java .class file & show output into cmd
+
+
+
+2. a) Write a java program using any five String library functions. 
+
+package programs.assigments.exams;
+
+public class StringQes {
+    public static void main(String[] args) {
+        String str1= "java is follow the oops concepts";
+        String str2 = "hello java";
+        String str3 = "hello JAVA";
+
+
+        //it concat other string 
+        System.out.println(str1.concat(" "+str2));
+
+        //give Char of index
+        System.out.println(str1.charAt(3));
+
+        //get string using substring for both str1,str2 and compair both are same or not
+        System.out.println(str1.substring(0,3).equals(str2.substring(6,9)));
+
+        //getting length of string
+        System.out.println(str1.length());
+
+        //copairing string ignoring Case
+        System.out.println(str3.compareToIgnoreCase(str2));
+    }
+}
+
+
+    
+b) Describe java garbage collection mechanism? 
+->
+    Garbage collection it manage to collect garbage value
+    if any variable or any resource not doing any opration but they occupied the memory.
+    java garbage collect take memory form them and free the memory and resource for other opration or use.
+
+
+3. Describe in detail various java forms of inheritance. 
+
+    1. Single levels
+    2. Multi levels
+    3. Multiple {not support in java}
+    4. Hierarchical
+    5. Hybrid 
+
+4. a) What is CLASSPATH? Describe various levels of access protection. 
+->  
+
+b) With an example explain java nested interfaces. 
+->
+
+
+5. a) Create a java program to generate and catch an 
+ArrayIndexOutOfBoundsException, and with an example prove that always 
+finally block will execute. 
+->
+        package programs.assigments.exams;
+
+        import programs.assigments.days.day1.finalll;
+
+        public class exceptionHandling {
+            public static void main(String[] args) {
+                int[] nums = {1,2,3,4};
+                try {
+                    System.out.println(nums[5]);
+                } catch (Exception e) {
+                System.out.println("Exception :"+e);    
+                }
+                finally{
+                    System.out.println("In the finally block");
+                }
+            }
+        }
+
+
+
+b) Briefly discuss the concepts of multi threading. 
+-> 
+    multi threading it allow us to run both threads in one time 
+    not waiting whole time for one part of code will execute 
+    it allow to execute morethan one block of code execute with simultaneously.
