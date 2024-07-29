@@ -128,7 +128,7 @@ public class TicketBookingDetail {
 
       //overriding method for payment
 
-    public static void makePayment(TicketBooking ticketBooking,double amount){
+    private static void makePayment(TicketBooking ticketBooking,double amount){
         System.out.println("\n\n\tPayment Method : "+ticketBooking.getPaymentMethod());
 
         System.out.println("\n\tCustomer Name : "+ticketBooking.getCustomer().getCustomerName());
@@ -138,7 +138,7 @@ public class TicketBookingDetail {
     }
 
      
-    public static void makePayment(TicketBooking ticketBooking,String walletNumber,double amount){
+    private static void makePayment(TicketBooking ticketBooking,String walletNumber,double amount){
         System.out.println("\n\n\tPayment Method : "+ticketBooking.getPaymentMethod());
 
         System.out.println("\n\tCustomer Name : "+ticketBooking.getCustomer().getCustomerName());
@@ -148,7 +148,7 @@ public class TicketBookingDetail {
         System.out.println("\tTotal Bill : "+(amount*ticketBooking.getNoOfSeats()));
     }
 
-    public static void makePayment(TicketBooking ticketBooking,String cardNo,String cvv,double amount){
+    private static void makePayment(TicketBooking ticketBooking,String cardNo,String cvv,double amount){
         System.out.println("\n\n\tPayment Method : "+ticketBooking.getPaymentMethod());
 
         System.out.println("\n\tCustomer Name : "+ticketBooking.getCustomer().getCustomerName());

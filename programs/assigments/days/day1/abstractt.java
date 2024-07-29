@@ -1,6 +1,6 @@
 package programs.assigments.days.day1;
 
-abstract class Car {
+abstract class Cars {
 
 
     // abstract method must want abstract class to define 
@@ -13,7 +13,21 @@ abstract class Car {
     }
 }
 
+class Porsche extends Cars{
+
+    @Override
+    void model() {
+       System.out.println("911");
+    }
+}
+
 public class abstractt {
     
+    public static void main(String[] args) {
+        
+        Cars porsche = new Porsche();
+        porsche.model();
+        porsche.color();
+    }
 }
  
